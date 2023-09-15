@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'HACKED';
+    src: url('../fonts/HACKED.ttf') format('ttf'),
+     ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
