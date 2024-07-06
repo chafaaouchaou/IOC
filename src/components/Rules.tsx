@@ -15,7 +15,13 @@ const Rules = () => {
     <Box overflow={"hidden"} bg={"black"} mb={"8rem"}>
       <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
         <Text
-          mt={"13rem"}
+          mt={{
+            base: '0',
+            sm: '0',
+            md: '0',
+            lg: '13rem'
+
+          }}
           color={"white"}
           fontSize={"48px"}
           fontFamily={"Hacked , sans-serif"}
@@ -24,39 +30,165 @@ const Rules = () => {
           Rules and conditions
         </Text>
       </Box>
-      <Grid templateColumns=" 1fr 1fr" position={"relative"} left={"-6.6rem"}>
-        <GridItem color={"white"}>
-          <Img m={"5rem"} mt={"5rem"} src={doctor} width={"600px"} position={"absolute"} />
+      <Grid templateRows={ {base:'repeat(2, 1fr)',sm: 'repeat(2, 1fr)',md: 'repeat(2, 1fr)', lg: '1fr'}}  templateColumns={{sm: '1fr', md: '1fr', lg: '1fr 1fr' }}  position={"relative"} left={{ md: '0', lg: "-6.6rem"}}>
+        <GridItem color={"white"} >
+          <Box display={
+            {base: 'flex',
+            sm: 'flex',
+            md: 'flex'
+
+            }
+          }
+          justifyContent={{
+            base: 'center',
+            sm: 'center',
+            md: 'center'
+          }} 
+        
+          
+          
+          
+          >
+            <Img  src={doctor} 
+            width={
+                     {    base: '600px',
+               'sm': '600px',
+               'md': '600px',
+               'lg': '500px',
+               '2lg': '600px',
+               'xl': '600px',
+                '2xl': '600px'}
+              }
+              ml={{
+                base: '10rem',
+                'sm': '7rem',
+                "2sm": '0rem',
+                'md': '0rem',
+                'lg': '50rem',
+                '2lg': '5rem',
+                'xl': '5rem',
+                 '2xl': '5rem'
+            
+              }}
+              mt={{
+              base : '5rem',
+              sm: '5rem',
+              md: '5rem',
+              lg: '10rem',
+              '2lg': '5rem',
+              xl: '5rem',
+                '2xl': '5rem'
+                
+
+              }}
+              position={"absolute"} />
+          </Box>
         </GridItem>
-        <GridItem>
-          <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
-            <Img width={"210px"} src={profile} />
+        <GridItem
+        ml={{
+          base: '0',
+          'sm': '0',
+          'md': '0',
+          'lg': '40rem',
+          '2lg': '0',
+          'xl': '0',
+           '2xl': '0'
+        }}
+        
+        >
+          <Box display={"flex"} justifyContent={"center"} alignItems={"center"} width={"100%"} m={"0 auto"}
+          
+          >
+            <Img width={"210px"} src={profile}  
+            ml={{
+              base: '8rem',
+              'sm': '4rem',
+              "2sm": '0rem',
+              'md': '0rem',
+              'lg': '0rem',
+              '2lg': '0rem',
+              'xl': '0rem',
+               '2xl': '0rem'
+            }} 
+            />
             <Text
               lineHeight={"30px"}
-              width={"35rem"}
+              width={{
+                base: "50%",
+                sm: "50%",
+                md: "70%",
+                lg: "100%",
+                '2lg': "100%",
+                xl: "100%",
+                 '2xl': "100 "
+
+              }}
               fontSize={"24px"}
               color={"white"}
+             
+
             >
               Make sure you register for the event and respect all of the
               previously stated regulations.
             </Text>
           </Box>
           <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
-            <Img width={"210px"} src={inconeto} />
+            <Img 
+            ml={{
+              base: '8rem',
+              'sm': '4rem',
+              "2sm": '0rem',
+              'md': '0rem',
+              'lg': '0rem',
+              '2lg': '0rem',
+              'xl': '0rem',
+               '2xl': '0rem'
+            }} 
+            
+            width={"210px"} src={inconeto} />
             <Text
-              lineHeight={"30px"}
-              width={"35rem"}
-              fontSize={"24px"}
-              color={"white"}
+               lineHeight={"30px"}
+               width={{
+                 base: "50%",
+                 sm: "50%",
+                 md: "70%",
+                 lg: "100%",
+                 '2lg': "100%",
+                 xl: "100%",
+                  '2xl': "100 "
+ 
+               }}
+               fontSize={"24px"}
+               color={"white"}
             >
               Do not touch the platform or conduct any sort of attack on it.
             </Text>
           </Box>
           <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
-            <Img width={"210px"} src={time} />
+            <Img
+            ml={{
+              base: '8rem',
+              'sm': '4rem',
+              "2sm": '0rem',
+              'md': '0rem',
+              'lg': '0rem',
+              '2lg': '0rem',
+              'xl': '0rem',
+               '2xl': '0rem'
+            }} 
+            width={"210px"} src={time} />
             <Text
               lineHeight={"30px"}
-              width={"35rem"}
+              width={{
+                base: "50%",
+                sm: "50%",
+                md: "70%",
+                lg: "100%",
+                '2lg': "100%",
+                xl: "100%",
+                 '2xl': "100 "
+
+              }}
               fontSize={"24px"}
               color={"white"}
             >
@@ -66,26 +198,71 @@ const Rules = () => {
         </GridItem>
       </Grid>
 
-      <Grid templateColumns=" 1fr 1fr" position={"relative"} right={"-6.6rem"}>
+
+{/* hhhhhhhhhhhhhhhhhhhhhhhh */}
+      <Grid  templateRows={ {base:'repeat(2, 1fr)',sm: 'repeat(2, 1fr)',md: 'repeat(2, 1fr)', lg: '1fr'}}  templateColumns={{sm: '1fr', md: '1fr', lg: '1fr 1fr' }} position={"relative"} right={{ md: '0', lg: "-6.6rem"}}>
         <GridItem position={"relative"}>
-          <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
+          <Box display={"flex"} justifyContent={"center"} alignItems={"center"} width={"100%"} m={"0 auto"}>
             <Text
-              lineHeight={"30px"}
-              width={"35rem"}
-              fontSize={"24px"}
-              color={"white"}
+               lineHeight={"30px"}
+               width={{
+                 base: "50%",
+                 sm: "50%",
+                 md: "70%",
+                 lg: "100%",
+                 '2lg': "100%",
+                 xl: "100%",
+                  '2xl': "100 "
+ 
+               }}
+               fontSize={"24px"}
+               color={"white"}
+               ml={{
+                base: '15rem',
+                'sm': '10rem',
+                "2sm": '0rem',
+                'md': '0rem',
+                'lg': '0rem',
+                '2lg': '0rem',
+                'xl': '0rem',
+                 '2xl': '0rem'
+              }} 
+              
             >
               Make sure you register for the event and respect all of the
               previously stated regulations.
             </Text>
-            <Img width={"210px"} src={menu} />
+            <Img 
+            width={"210px"} src={menu}
+           
+            />
+
           </Box>
           <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
             <Text
-              lineHeight={"30px"}
-              width={"35rem"}
-              fontSize={"24px"}
-              color={"white"}
+                lineHeight={"30px"}
+                width={{
+                  base: "50%",
+                  sm: "50%",
+                  md: "70%",
+                  lg: "100%",
+                  '2lg': "100%",
+                  xl: "100%",
+                   '2xl': "100 "
+  
+                }}
+                fontSize={"24px"}
+                color={"white"}
+                ml={{
+                  base: '15rem',
+                  'sm': '10rem',
+                  "2sm": '0rem',
+                  'md': '0rem',
+                  'lg': '0rem',
+                  '2lg': '0rem',
+                  'xl': '0rem',
+                   '2xl': '0rem'
+                }} 
             >
               Do not touch the platform or conduct any sort of attack on it.
             </Text>
@@ -93,10 +270,29 @@ const Rules = () => {
           </Box>
           <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>
             <Text
-              lineHeight={"30px"}
-              width={"35rem"}
-              fontSize={"24px"}
-              color={"white"}
+               lineHeight={"30px"}
+               width={{
+                 base: "50%",
+                 sm: "50%",
+                 md: "70%",
+                 lg: "100%",
+                 '2lg': "100%",
+                 xl: "100%",
+                  '2xl': "100 "
+ 
+               }}
+               fontSize={"24px"}
+               color={"white"}
+               ml={{
+                base: '15rem',
+                'sm': '10rem',
+                "2sm": '0rem',
+                'md': '0rem',
+                'lg': '0rem',
+                '2lg': '0rem',
+                'xl': '0rem',
+                 '2xl': '0rem'
+              }} 
             >
               Do not touch the platform or conduct any sort of attack on it.
             </Text>
@@ -105,7 +301,51 @@ const Rules = () => {
         </GridItem>
 
         <GridItem>
-          <Img mt={"5rem"} src={dron} width={"550px"} position={"absolute"} />
+        <Box display={
+            {base: 'flex',
+            sm: 'flex',
+            md: 'flex'
+
+            }
+          }
+          justifyContent={{
+            base: 'center',
+            sm: 'center',
+            md: 'center'
+          }} 
+        
+          
+          
+          
+          >
+
+          <Img
+         src={dron} width={"550px"} position={"absolute"}
+           
+           ml={{
+            base: '10rem',
+            'sm': '7rem',
+            "2sm": '0rem',
+            'md': '0rem',
+            'lg': '50rem',
+            '2lg': '5rem',
+            'xl': '5rem',
+             '2xl': '5rem'
+        
+          }}
+          mt={{
+          base : '5rem',
+          sm: '5rem',
+          md: '5rem',
+          lg: '10rem',
+          '2lg': '5rem',
+          xl: '5rem',
+            '2xl': '5rem'
+            
+
+          }}
+           />
+          </Box>
         </GridItem>
       </Grid>
     </Box>

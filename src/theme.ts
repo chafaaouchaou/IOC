@@ -44,8 +44,10 @@ const colors = {
 const breakpoints = {
   base: '0px', // 0px
   sm: '480px', // ~480px. em is a relative unit and is dependant on the font size.
+  '2sm': '639px', // ~600px
   md: '958px', // ~768px
   lg: '1052px', // ~992px
+  '2lg' : '1151px',
   xl: '1228px', // ~1280px
   '2xl': '1536px', // ~1536px
 }
