@@ -4,20 +4,9 @@ import ButtonStart from "./ButtonStart";
 import LanguegeButton from "./LanguegeButton";
 import logo from "../assets/logo.svg";
 // import { useEffect, useState } from "react";
+import  Drawer from "./Drawer";
 
-import { TiThMenuOutline } from 'react-icons/ti';
 const Navbar = () => {
-  // const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setScreenWidth(window.innerWidth);
-  //   };
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
 
 
   return (
@@ -70,16 +59,13 @@ const Navbar = () => {
         <ButtonStart />
       </HStack>
 
-      <Box color={"green.500"} className="menuberger"
+      <Box color={"green.400"} className="menuberger"
       display={{"sm": "block", "md": "none"}}
       >
-        <TiThMenuOutline className="menubergerlogo" />
+        <Drawer/>
       </Box>
     </HStack>
-    {/* //  ) : (
-    //   <>hello</>
-    // )}  */}
-
+          
     </>
   );
 };

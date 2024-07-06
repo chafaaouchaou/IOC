@@ -36,8 +36,22 @@ const colors = {
     800: "rgba(0, 102, 53,    0.4)",
     900: "rgba(0, 51, 26,     0.4)",
   },
+  // gray: {
+ 
+  //   300: "#8B8A8C",
+   
+  // },
   gray: {
-    300: "#8B8A8C",
+    50: "#f9f9f9",
+    100: "#ededed",
+    200: "#d3d3d3",
+    300: "#b3b3b3",
+    400: "#a0a0a0",
+    500: "#898989",
+    600: "#6c6c6c",
+    700: "#202020",
+    800: "#121212",
+    900: "#111",
   },
 };
 
@@ -54,7 +68,6 @@ const breakpoints = {
 
 // 1228
 
-let theme = extendTheme({ colors });
-theme = extendTheme({ breakpoints });
+let theme = extendTheme({ breakpoints,colors });
 
 export default theme;
