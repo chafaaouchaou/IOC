@@ -24,10 +24,9 @@ const Rules = () => {
           Rules and conditions
         </Text>
       </Box>
-      {/* <Img src={dron} /> */}
       <Grid templateColumns=" 1fr 1fr" position={"relative"} left={"-6.6rem"}>
         <GridItem color={"white"}>
-          <Img mt={"5rem"} src={doctor} width={"600px"} position={"absolute"} />
+          <Img m={"5rem"} mt={"5rem"} src={doctor} width={"600px"} position={"absolute"} />
         </GridItem>
         <GridItem>
           <Box display={"flex"} justifyContent={"center"} alignItems={"center"}>

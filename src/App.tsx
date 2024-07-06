@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      {screenWidth >= 1228 ? (
+      
         <Box
           bg={"black"}
           display={"flex"}
@@ -78,22 +78,15 @@ function App() {
             </Box>
           </Box>
         </Box>
-      ) : (
-        <Box bg={"black"} h={"100vw"}>
-          <Alert status="error">
-            <AlertIcon />
-            <AlertTitle>
-              Your browser has to be 1220px wide or higher.
-            </AlertTitle>
-            <AlertDescription>
-              The developer of this website was too lazy to make the website
-              responsive.
-            </AlertDescription>
-          </Alert>
-        </Box>
-      )}
+    
+        
+      
     </>
   );
 }
 
 export default App;
+
+
+
+// 1228
