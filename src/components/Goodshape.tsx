@@ -7,7 +7,8 @@ import background3 from "../assets/bg3.svg";
 const Goodshape = () => {
   return (
     <Box
-      margin={"0 34px "}
+      // m={"0 2rem 0 7.5rem"}
+      bg={"black"}
       backgroundImage={`url(${background1})`}
       backgroundSize={"cover"}
       backgroundRepeat={"no-repeat"}
@@ -32,7 +33,7 @@ const Goodshape = () => {
           >
             <Text
               // fontSize={"81px"}
-              fontSize={{ base: '24px', md: '40px', lg: '51px',  xl : '81px' }}
+              fontSize={{ base: '24px',"2sm": '34', md: '40px', lg: '51px',  xl : '81px' }}
               color={"white"}
               sx={{
                 fontFamily: "Hacked , sans-serif",
@@ -61,9 +62,6 @@ const Goodshape = () => {
           display={"flex"}
           flexDirection={"column"}
           w="100%"
-          // h="34.5rem"
-          // height={{base: "34.5rem", sm: "14.5rem", md: "34.5rem", lg: "34.5rem",  xl : "34.5rem"}}
-          // mt={{base: "0", sm: "05rem", md: "0", lg: "0",  xl : "0"}}
 
           justifyContent={"center"}
         >
@@ -88,7 +86,7 @@ const Goodshape = () => {
                 color={"white"}
                 // fontSize={"24px"}
                 // fontSize={{ base: '24px', md: '24px', '1052px': '24px',  xl : '24px' }}
-                fontSize={{ base: '14px', sm:'15px', md: '17px', lg: '20px',  xl : '24px' }}
+                fontSize={{ base: '14px', sm:'10px',"2sm": '12', md: '17px', lg: '20px',  xl : '24px' }}
 
                 // p={"0 2rem"}
                 padding={{ base: '0 1rem',sm: '0 1rem 0 1rem', md: '0 0rem', lg: '0 1rem 0 1rem ',  xl : '0 0rem' }}

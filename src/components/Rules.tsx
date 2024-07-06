@@ -64,7 +64,7 @@ const Rules = () => {
                 'sm': '7rem',
                 "2sm": '0rem',
                 'md': '0rem',
-                'lg': '50rem',
+                'lg': '15rem',
                 '2lg': '5rem',
                 'xl': '5rem',
                  '2xl': '5rem'
@@ -89,7 +89,7 @@ const Rules = () => {
           base: '0',
           'sm': '0',
           'md': '0',
-          'lg': '40rem',
+          'lg': '2rem',
           '2lg': '0',
           'xl': '0',
            '2xl': '0'
@@ -327,7 +327,7 @@ const Rules = () => {
             'sm': '7rem',
             "2sm": '0rem',
             'md': '0rem',
-            'lg': '50rem',
+            'lg': '0rem',
             '2lg': '5rem',
             'xl': '5rem',
              '2xl': '5rem'

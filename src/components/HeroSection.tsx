@@ -83,15 +83,25 @@ const HeroSection = () => {
         IMPACT OF CODE
       </Text>
 
-      <Box margin={"auto"} m={"0px auto"}>
-        <Text textAlign={"center"} mt={"00px"} color={"white"} maxW={"40rem"}>
+      <Box  display={"flex"} alignItems={"center"} justifyContent={"center"  } 
+      m={{
+        "base": "0px 1rem",
+        md: "0px auto",
+      }}
+      >
+        <Text textAlign={"center"} mt={"0px"} color={"white"} maxW={"40rem"}>
           Impact of code is a one-week-long dev event that consists of daily
           coding challenges wrapped up in a story scenario under the theme of an
           apocalyptic world (prequel to last year’s story) in which we follow
           the steps of a character as he solves his way to escape the end.
         </Text>
       </Box>
-      <Box margin={"auto"} m={"16px auto "}>
+      
+      <Box display={"flex"} alignItems={"center"} justifyContent={"center"  } 
+            m={{
+        "base": "16px 1rem",
+        md: "0px auto",
+      }}>
         <Text textAlign={"center"} mt={"0px"} color={"white"} maxW={"40rem"}>
           Each day participants will discover a new primary challenge and a
           bonus challenge with a chance to win points after solving each one.
