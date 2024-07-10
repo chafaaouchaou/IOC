@@ -18,6 +18,8 @@ function App() {
   const minWidth = 660;
 
   useEffect(() => {
+    localStorage.setItem('chakra-ui-color-mode', 'dark');
+
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
     };
@@ -55,10 +57,10 @@ function App() {
             p={4}
           >
             <AlertIcon />
-            <Text fontSize="lg" fontWeight="bold">
+            <Text fontSize="lg" fontWeight="bold" color={"blackAlpha.900"}>
               This website requires a screen width of at least 660px for optimal display.
             </Text>
-            <Text fontSize="md">
+            <Text fontSize="md" color={"blackAlpha.800"}>
               Please resize your window or use a larger device.
             </Text>
           </Alert>

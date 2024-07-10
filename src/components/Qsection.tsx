@@ -1,8 +1,8 @@
-import { Box, HStack, Text, VStack, Img } from "@chakra-ui/react";
+import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 
 import background1 from "../assets/ss.png";
-import twoarrows from "../assets/twoarrows.svg";
-import line from "../assets/Line.svg";
+import AccordionItemm from "./AccordionItemm";
+
 
 const Qsection = () => {
   return (
@@ -35,57 +35,53 @@ const Qsection = () => {
         </VStack>
       </HStack>
 
-      <Box display={"flex"} flexDir={"column"} alignItems={"center"}>
-        <Box>
-          <Box marginLeft={"1.5rem"} display={"flex"} cursor={"pointer"}>
-            <Img marginRight={"10px"} src={twoarrows} />
-            <Text color={"white"} fontSize={"24px"} fontWeight={"600"}>
-              What does IOC stand for?, and what is it about?
-            </Text>
-          </Box>
-          <img src={line} alt="" />
-        </Box>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <Box display={"flex"} flexDir={"column"} alignItems={"center"} width={"auto"}  m={"0 1rem"}>
 
         <Box>
-          <Box marginLeft={"1.5rem"} display={"flex"} cursor={"pointer"}>
-            <Img marginRight={"10px"} src={twoarrows} />
-            <Text color={"white"} fontSize={"24px"} fontWeight={"600"}>
-              What does IOC stand for?, and what is it about?
-            </Text>
-          </Box>
-          <img src={line} alt="" />
-        </Box>
-
+          <AccordionItemm 
+          question="What does IOC stand for?, and what is it about?" 
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+           </Box>
         <Box>
-          <Box marginLeft={"1.5rem"} display={"flex"} cursor={"pointer"}>
-            <Img marginRight={"10px"} src={twoarrows} />
-            <Text color={"white"} fontSize={"24px"} fontWeight={"600"}>
-              What does IOC stand for?, and what is it about?
-            </Text>
-          </Box>
-          <img src={line} alt="" />
-        </Box>
-
+          <AccordionItemm 
+          question="What does IOC stand for?, and what is it about?" 
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+           </Box>
         <Box>
-          <Box marginLeft={"1.5rem"} display={"flex"} cursor={"pointer"}>
-            <Img marginRight={"10px"} src={twoarrows} />
-            <Text color={"white"} fontSize={"24px"} fontWeight={"600"}>
-              What does IOC stand for?, and what is it about?
-            </Text>
-          </Box>
-          <img src={line} alt="" />
-        </Box>
-
+          <AccordionItemm 
+          question="What does IOC stand for?, and what is it about?" 
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+           </Box>
         <Box>
-          <Box marginLeft={"1.5rem"} display={"flex"} cursor={"pointer"}>
-            <Img marginRight={"10px"} src={twoarrows} />
-            <Text color={"white"} fontSize={"24px"} fontWeight={"600"}>
-              What does IOC stand for?, and what is it about?
-            </Text>
-          </Box>
-          <img src={line} alt="" />
-        </Box>
+          <AccordionItemm 
+          question="What does IOC stand for?, and what is it about?" 
+          answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          />
+           </Box>
+     
+        
       </Box>
+      
     </Box>
   );
 };
