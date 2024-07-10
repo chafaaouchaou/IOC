@@ -1,30 +1,21 @@
 import {
     Drawer,
     DrawerBody,
-    DrawerFooter,
     DrawerHeader,
     DrawerOverlay,
     DrawerContent,
-    DrawerCloseButton,
-    RadioGroup,
-    Stack,
-    Radio,
     Img,
     Text,
     Box,
    
   } from '@chakra-ui/react'
-    import { Button, useDisclosure } from '@chakra-ui/react'
+    import { useDisclosure } from '@chakra-ui/react'
     import { TiThMenuOutline } from 'react-icons/ti';
 
-import React from 'react'
-import ButtonStart from "./ButtonStart";
-import LanguegeButton from "./LanguegeButton";
 import logo from "../assets/logo.svg";
 
 function drawer() {
     const { isOpen, onOpen, onClose } = useDisclosure()
-    const [placement, setPlacement] = React.useState('right')
   
     return (
       <>
